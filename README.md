@@ -1,9 +1,9 @@
-# @korbit/mcp
+# @korbitbr/mcp
 
 Servidor MCP (Model Context Protocol) da Korbit: pagamentos por PIX e cartão, catálogo, assinaturas, saldo, saques e webhooks — direto das ferramentas do seu agente de IA (Claude Desktop, Claude Code, Cursor, Codex e qualquer cliente MCP).
 
 ```bash
-npx -y @korbit/mcp
+npx -y @korbitbr/mcp
 ```
 
 ## Segurança por padrão
@@ -25,7 +25,7 @@ Gere a chave no painel Korbit (**Integrações → Chaves de API**). O ambiente 
   "mcpServers": {
     "korbit": {
       "command": "npx",
-      "args": ["-y", "@korbit/mcp"],
+      "args": ["-y", "@korbitbr/mcp"],
       "env": {
         "KORBIT_API_KEY": "kbt_test_EXEMPLO_NAO_USAR"
       }
@@ -43,7 +43,7 @@ Gere a chave no painel Korbit (**Integrações → Chaves de API**). O ambiente 
   "mcpServers": {
     "korbit": {
       "command": "npx",
-      "args": ["-y", "@korbit/mcp"],
+      "args": ["-y", "@korbitbr/mcp"],
       "env": { "KORBIT_API_KEY": "kbt_test_EXEMPLO_NAO_USAR" }
     }
   }
@@ -53,7 +53,7 @@ Gere a chave no painel Korbit (**Integrações → Chaves de API**). O ambiente 
 ### Claude Code / Codex CLI
 
 ```bash
-claude mcp add korbit --env KORBIT_API_KEY=kbt_test_EXEMPLO_NAO_USAR -- npx -y @korbit/mcp
+claude mcp add korbit --env KORBIT_API_KEY=kbt_test_EXEMPLO_NAO_USAR -- npx -y @korbitbr/mcp
 ```
 
 ### Habilitar movimentação de dinheiro
