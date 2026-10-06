@@ -7,6 +7,7 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
+    environment: npm-release
     permissions:
       id-token: write # provenância npm (npm >9.5)
       contents: read
